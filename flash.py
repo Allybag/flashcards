@@ -3,7 +3,29 @@ from tkinter import ttk
 
 size = 500
 
+def readFile(inFile):
+	questions = []
+	answers   = []
+	comments  = []
+	tags      = []
+
+	with open(inFile, 'r', encoding='utf-8') as inFile:
+		for line in inFile:
+			if line.count(',') != 3:
+				continue
+			field1 = line.find(',')
+			field2 = line.find(',', field1 + 1)
+			field3 = line.find(',', field2 + 1)
+			questions.append(line[:field1])
+			answers.append(line[field1 + 1:field2])
+			comments.append(line[field2 + 1:field3])
+			tags.append(line[field3 + 1:])
+
+			return(questions, answers, comments, tags)
+
 def main():
+	(questions, answers, comments, tags) = readFile("csv/Kanji.csv")
+	index = 0
 	root = Tk()
 	root.title("Flash Cards")
 	root.geometry('{}x{}'.format(size, size))
@@ -11,8 +33,8 @@ def main():
 	qFrame = ttk.Frame(root, height=size*0.4, width=size)
 	aFrame = ttk.Frame(root, height=size*0.6, width=size)
 
-	question = ttk.Label(qFrame, text="質問", anchor="center", font=("Meiryo", "108"))
-	answer   = ttk.Label(aFrame, text="答え", anchor="center", font=("Meiryo", "72"))
+	question = ttk.Label(qFrame, text=questions[index], anchor="center", font=("Meiryo", "108"))
+	answer   = ttk.Label(aFrame, text=answers[index], anchor="center", font=("Meiryo", "72"))
 	blank    = ttk.Label(aFrame, text="", background='#000')
 	wrong    = ttk.Button(aFrame, text="Wrong")
 	confused = ttk.Button(aFrame, text="Mixup")
