@@ -41,6 +41,7 @@ def main():
 	mixeds   = []
 	repeats  = []
 	corrects = []
+	touched  = ""
 
 	# Setting up the text variables which will be displayed on the cards
 	q = StringVar()
@@ -68,26 +69,30 @@ def main():
 
 	def wrongAns():
 		"""Appends the card to wrong list, and moves to the next card"""
-		nonlocal wrongs
+		nonlocal wrongs, touched
 		wrongs.append((txtPrt(q), txtPrt(a), txtPrt(c), txtPrt(t)))
+		touched = wrongs
 		nextQuestion()
 
 	def mixedAns():
 		"""Appends the card to mixed list, and moves to the next card"""
-		nonlocal mixeds
+		nonlocal mixeds, touched
 		mixeds.append((txtPrt(q), txtPrt(a), txtPrt(c), txtPrt(t)))
+		touched = mixeds
 		nextQuestion()
 
 	def repeatCard():
 		"""Appends the card to repeat list, and moves to the next card"""
-		nonlocal repeats
+		nonlocal repeats, touched
 		repeats.append((txtPrt(q), txtPrt(a), txtPrt(c), txtPrt(t)))
+		touched = repeats
 		nextQuestion()
 
 	def correctAns():
 		"""Appends the card to correct list, and moves to the next card"""
-		nonlocal corrects
+		nonlocal corrects, touched
 		corrects.append((txtPrt(q), txtPrt(a), txtPrt(c), txtPrt(t)))
+		touched = corrects
 		nextQuestion()
 
 	def nextQuestion():
@@ -98,6 +103,18 @@ def main():
 		a.set(answers[index])
 		c.set(comments[index])
 		t.set(tags[index])
+		aFrame.grid_remove()
+		comment.grid_remove()
+
+	def undo():
+		"""Displays the question from the previous card"""
+		nonlocal index, touched
+		index = index - 1
+		q.set(questions[index])
+		a.set(answers[index])
+		c.set(comments[index])
+		t.set(tags[index])
+		touched.pop()
 		aFrame.grid_remove()
 		comment.grid_remove()
 
@@ -149,7 +166,8 @@ def main():
 	aFrame.bind('<1>', lambda e: showComment())
 	root.bind('<Return>', lambda e: correctAns())
 	root.bind('<space>', lambda e: showAnswers())
-	root.bind('<BackSpace>', lambda e: wrongAns())
+	root.bind('<BackSpace>', lambda e: undo())
+	root.bind('<Escape>', lambda e: wrongAns())
 	root.bind('<Tab>', lambda e: mixedAns())
 
 	# Creating File Menu
@@ -158,8 +176,8 @@ def main():
 
 	fileMenu = Menu(menu)
 	menu.add_cascade(label="File", menu=fileMenu)
-	# Undo calls the clear function on the most recently played square.
-	fileMenu.add_command(label="Index", command=lambda: print(index))
+	# Undo only works properly once
+	fileMenu.add_command(label="Undo", command=lambda: undo())
 	fileMenu.add_command(label="Wrongs", command=lambda: csvWrite("wrongCards.csv",wrongs))
 	fileMenu.add_command(label="Mixeds", command=lambda: csvWrite("mixedCards.csv",mixeds))
 	fileMenu.add_command(label="Repeats", command=lambda: csvWrite("repeatCards.csv",repeats))
