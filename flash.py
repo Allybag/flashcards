@@ -21,7 +21,7 @@ def readFile(inFile):
 			comments.append(line[field2 + 1:field3])
 			tags.append(line[field3 + 1:])
 
-			return(questions, answers, comments, tags)
+		return(questions, answers, comments, tags)
 
 def main():
 	(questions, answers, comments, tags) = readFile("csv/Kanji.csv")
@@ -29,18 +29,33 @@ def main():
 	root = Tk()
 	root.title("Flash Cards")
 	root.geometry('{}x{}'.format(size, size))
+	q = StringVar()
+	a = StringVar()
+	q.set(questions[index])
+	a.set(answers[index])
 
 	qFrame = ttk.Frame(root, height=size*0.4, width=size)
 	aFrame = ttk.Frame(root, height=size*0.6, width=size)
 
-	question = ttk.Label(qFrame, text=questions[index], anchor="center", font=("Meiryo", "108"))
-	answer   = ttk.Label(aFrame, text=answers[index], anchor="center", font=("Meiryo", "72"))
+	def showAnswers():
+		aFrame.grid()
+
+	def nextQuestion():
+		nonlocal index
+		index = index + 1
+		q.set(questions[index])
+		a.set(answers[index])
+		aFrame.grid_remove()
+
+	question = ttk.Label(qFrame, textvariable=q, anchor="center", font=("Meiryo", "108"))
+	answer   = ttk.Label(aFrame, textvariable=a, anchor="center", font=("Meiryo", "72"))
 	blank    = ttk.Label(aFrame, text="", background='#000')
 	wrong    = ttk.Button(aFrame, text="Wrong")
 	confused = ttk.Button(aFrame, text="Mixup")
 	again    = ttk.Button(aFrame, text="Ask again")
-	correct  = ttk.Button(aFrame, text="Correct")
+	correct  = ttk.Button(aFrame, text="Correct", command=nextQuestion)
 
+	# The long process of sorting out the geometry manager
 	qFrame.grid(row=0, column=0)
 	qFrame.grid_propagate(0)
 
@@ -68,11 +83,18 @@ def main():
 
 	aFrame.grid_remove()
 
-	def showAnswers():
-		aFrame.grid()
-
 	qFrame.bind('<1>', lambda e: showAnswers())
 	question.bind('<1>', lambda e: showAnswers())
+
+	# Creating File Menu
+	menu = Menu(root)
+	root.config(menu=menu)
+
+	fileMenu = Menu(menu)
+	menu.add_cascade(label="File", menu=fileMenu)
+	# Undo calls the clear function on the most recently played square.
+	fileMenu.add_command(label="State", command=lambda: print(index))
+
 	root.mainloop()
 
 if __name__ == '__main__':
