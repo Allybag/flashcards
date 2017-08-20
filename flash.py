@@ -24,36 +24,88 @@ def readFile(inFile):
 		return(questions, answers, comments, tags)
 
 def main():
+	# Read up the data to be studied
 	(questions, answers, comments, tags) = readFile("csv/Kanji.csv")
+
+	# Initalisation
 	index = 0
 	root = Tk()
 	root.title("Flash Cards")
 	root.geometry('{}x{}'.format(size, size))
+
+	# Setting up the lists of answered cards
+	wrongs   = []
+	mixeds   = []
+	repeats  = []
+	corrects = []
+
+	# Setting up the text variables which will be displayed on the cards
 	q = StringVar()
 	a = StringVar()
+	c = StringVar()
+	t = StringVar()
 	q.set(questions[index])
 	a.set(answers[index])
+	c.set(comments[index])
+	t.set(tags[index])
 
 	qFrame = ttk.Frame(root, height=size*0.4, width=size)
 	aFrame = ttk.Frame(root, height=size*0.6, width=size)
 
+	def txtPrt(sVar):
+		return sVar.get()
+
 	def showAnswers():
+		"""Makes the answer frame appear"""
 		aFrame.grid()
 
+	def wrongAns():
+		"""Appends the card to wrong list, and moves to the next card"""
+		nonlocal wrongs
+		wrongs.append((txtPrt(q), txtPrt(a), txtPrt(c), txtPrt(t)))
+		nextQuestion()
+		
+	def mixedAns():
+		"""Appends the card to mixed list, and moves to the next card"""
+		nonlocal mixeds
+		mixeds.append((txtPrt(q), txtPrt(a), txtPrt(c), txtPrt(t)))
+		nextQuestion()
+
+	def repeatCard():
+		"""Appends the card to repeat list, and moves to the next card"""
+		nonlocal repeats
+		repeats.append((txtPrt(q), txtPrt(a), txtPrt(c), txtPrt(t)))
+		nextQuestion()
+
+	def correctAns():
+		"""Appends the card to correct list, and moves to the next card"""
+		nonlocal corrects
+		corrects.append((txtPrt(q), txtPrt(a), txtPrt(c), txtPrt(t)))
+		nextQuestion()
+
 	def nextQuestion():
+		"""Displays the question from the next card"""
 		nonlocal index
 		index = index + 1
 		q.set(questions[index])
 		a.set(answers[index])
+		c.set(comments[index])
+		t.set(tags[index])
 		aFrame.grid_remove()
+
+	def csvWrite(name, ansList):
+		with open("csv/{}".format(name), 'w', encoding='utf-8') as outFile:
+			for line in ansList:
+				ansLine = ",".join(line)
+				outFile.write(ansLine)
 
 	question = ttk.Label(qFrame, textvariable=q, anchor="center", font=("Meiryo", "108"))
 	answer   = ttk.Label(aFrame, textvariable=a, anchor="center", font=("Meiryo", "72"))
 	blank    = ttk.Label(aFrame, text="", background='#000')
-	wrong    = ttk.Button(aFrame, text="Wrong")
-	confused = ttk.Button(aFrame, text="Mixup")
-	again    = ttk.Button(aFrame, text="Ask again")
-	correct  = ttk.Button(aFrame, text="Correct", command=nextQuestion)
+	wrong    = ttk.Button(aFrame, text="Wrong", command=wrongAns)
+	confused = ttk.Button(aFrame, text="Mixup", command=mixedAns)
+	again    = ttk.Button(aFrame, text="Ask again", command=repeatCard)
+	correct  = ttk.Button(aFrame, text="Correct", command=correctAns)
 
 	# The long process of sorting out the geometry manager
 	qFrame.grid(row=0, column=0)
@@ -93,7 +145,11 @@ def main():
 	fileMenu = Menu(menu)
 	menu.add_cascade(label="File", menu=fileMenu)
 	# Undo calls the clear function on the most recently played square.
-	fileMenu.add_command(label="State", command=lambda: print(index))
+	fileMenu.add_command(label="Index", command=lambda: print(index))
+	fileMenu.add_command(label="Wrongs", command=lambda: csvWrite("wrongCards.csv",wrongs))
+	fileMenu.add_command(label="Mixeds", command=lambda: csvWrite("mixedCards.csv",mixeds))
+	fileMenu.add_command(label="Repeats", command=lambda: csvWrite("repeatCards.csv",repeats))
+	fileMenu.add_command(label="Corrects", command=lambda: csvWrite("correctCards.csv",corrects))
 
 	root.mainloop()
 
