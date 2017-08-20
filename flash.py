@@ -1,3 +1,4 @@
+import random
 from tkinter import *
 from tkinter import ttk
 
@@ -10,18 +11,20 @@ def readFile(inFile):
 	tags      = []
 
 	with open(inFile, 'r', encoding='utf-8') as inFile:
-		for line in inFile:
-			if line.count(',') != 3:
-				continue
-			field1 = line.find(',')
-			field2 = line.find(',', field1 + 1)
-			field3 = line.find(',', field2 + 1)
-			questions.append(line[:field1])
-			answers.append(line[field1 + 1:field2])
-			comments.append(line[field2 + 1:field3])
-			tags.append(line[field3 + 1:])
+		lines = inFile.readlines()
+		random.shuffle(lines)
+	for line in lines:
+		if line.count(',') != 3:
+			continue
+		field1 = line.find(',')
+		field2 = line.find(',', field1 + 1)
+		field3 = line.find(',', field2 + 1)
+		questions.append(line[:field1])
+		answers.append(line[field1 + 1:field2])
+		comments.append(line[field2 + 1:field3])
+		tags.append(line[field3 + 1:])
 
-		return(questions, answers, comments, tags)
+	return(questions, answers, comments, tags)
 
 def main():
 	# Read up the data to be studied
