@@ -1,0 +1,1055 @@
+一,いち,One,1
+人,ひと,Man,2
+十,じゅう,Ten,3
+二,に,Two,4
+九,きゅう,Nine,5
+入,はい。る,Enter,6
+八,はち,Eight,7
+七,しち,Seven,8
+大,ダイ,Big,9
+ミ,み,Three,10
+上,うえ,Above,11
+子,こ,Child,12
+下,した,Un-,13
+小,ちい。さい,Small,14
+山,やま,Mountain,15
+女,おんな,Woman,16
+川,かわ,River,17
+千,せん,Thousand,18
+口,くち,Mouth,19
+土,つち,Earth,20
+万,まん,Ten thousand,21
+日,ひ,Day,22
+中,なか,Within,23
+月,げつ,Moon,24
+分,ふん,Minute,25
+五,ご,Five,26
+今,コン,Now,27
+手,て,Hand,28
+円,えん,Yen,29
+六,た。つ,Six,30
+午,ご,Noon,31
+水,みず,Water,32
+少,すく,Few,33
+木,き,Tree,34
+天,てん,Heaven,35
+火,ひ,Fire,36
+友,とも,Friend,37
+父,ちち,Father,38
+本,ほん,Book,39
+出,で。る,To Go Out,40
+生,う。まめる,To Be Born,41
+四,よん,Four,42
+立,た。つ,To Stand,43
+目,め,Eye,44
+外,ガイ,Outside,45
+北,きた,North,46
+白,しろ,White,47
+古,ふる。い,Old,48
+半,はん,Half,49
+母,はは,Mother,50
+右,みぎ,Right,51
+左,ひだり,Left,52
+会,あ。う,To Meet,53
+年,ねん,Year,54
+行,い。く,To Go,55
+気,き,Spirit,56
+多,おお。い,Many,57
+安,やす。い,Cheap,58
+百,ひゃく,Hundred,59
+先,さき,Previous,60
+名,な,Name,61
+西,にし,West,62
+毎,マイ,Every,63
+休,やす。み,To Relax,64
+耳,みみ,Ear,65
+社,しゃ,Company,66
+言,い。う,To Say,67
+来,く。る,To Come,68
+男,おとこ,Man,69
+車,くるま,Car,70
+何,なに,What,71
+足,あし,Leg,72
+花,はな,Flower,73
+国,コク,Nation,74
+長,なが。い,Long,75
+東,ひがし,East,76
+金,キン,Gold,77
+学,ガク,School,78
+空,そら,Sky,79
+店,みせ,Shop,80
+雨,あめ,Rain,81
+後,あと,After,82
+前,まえ,In Front,83
+食,た。べる,To Eat,84
+南,みなみ,South,85
+時,とき,Time,86
+高,たか。い,High,87
+書,か。く,To Write,88
+校,コウ,School,89
+週,しゅう,Week,90
+魚,さかな,Fish,91
+間,あいだ,Between,92
+道,みち,Path,93
+買,か。う,To Buy,94
+飲,の。む,To Drink,95
+新,あたら。しい,New,96
+話,はな。す,To Speak,97
+電,デン,Electricity,98
+語,ゴ,Language,99
+聞,き。く,To Ask,100
+読,よ。む,To Read,101
+駅,えき,Station,102
+不,フ(不便),Un,103
+世,セ(世界),World,104
+主,ぬし,Lord,105
+乗,の。る,To Embark,106
+事,こと,Matter,107
+京,(東京)キョウ,Capital,108
+仕,つか。える,To Serve,109
+代,(時代)ダイ,Generation,110
+以,イ(以外),By Means Of,111
+低,ひく。い,Low,112
+住,す。む,To Dwell,113
+体,からだ,Body,114
+作,つく。る,To Make,115
+使,つか。う,To Use,116
+便,ベン(便利),Convenient,117
+借,か。りる,To Borrow,118
+働,はたら。く,To Work,119
+元,ゲン(元気),Beginning,120
+兄,あに,Big Brother,121
+光,ひかり,Light,122
+写,シャ(写真),Copy,123
+冬,ふゆ,Winter,124
+切,き。る,To Cut,125
+別,べつ,Separate,126
+力,ちから,Power,127
+勉,ベン(勉強),Exertion,128
+動,うご。く,To Move,129
+区,く,District,130
+医,い(医者),Doctor,131
+去,きょ(去年),Gone,132
+台,うてな,Pedestal,133
+合,(に合う)あ。う,To Suit,134
+同,おな。じ,Same,135
+味,あじ,Taste,136
+品,しな,Goods,137
+員,いん,Member,138
+問,モン(問題),Question,139
+回,~かい,~Times,140
+図,(地図)ズ,Map,141
+地,チ(地図),Earth,142
+堂,(食堂)ドウ,Hall,143
+場,バ(場所),Place,144
+声,こえ,Voice,145
+売,う。る,To Sell,146
+夏,なつ,Summer,147
+夕,ユウ,Evening,148
+夜,よる,Night,149
+太,ふと。る,To Fatten,150
+好,す。き,Like,151
+妹,いもうと,Little Sister,152
+姉,あね,Big Sister,153
+始,はじ。まる,To Start,154
+字,(漢字)ジ,Character,155
+室,シツ,Room,156
+家,いえ,House,157
+寒,さむ。い,Cold,158
+屋,(酒屋)ヤ,Seller,159
+工,コウ(工場),Craft,160
+市,シ,City,161
+帰,かえ。る,To Return,162
+広,ひろ。い,Wide,163
+度,ド,Degrees,164
+建,た。てる,To Build,165
+引,ひ。く,To Pull,166
+弟,おとうと,Little Brother,167
+弱,よわ。い,Weak,168
+強,つよ。い,Strong,169
+待,ま。つ,To Wait,170
+心,こころ,Heart,171
+思,おも。う,To Think,172
+急,いそ。ぐ,To Hurry,173
+悪,わる。い,Bad,174
+意,イ(意味),Thoughts,175
+所,ところ,Location,176
+持,も。つ,To Hold,177
+教,おし。える,To Teach,178
+文,ブン,Sentence,179
+料,リョウ,Fee,180
+方,かた,Direction,181
+族,(家族)ソク,Tribe,182
+旅,タビ,Trip,183
+早,はや。い,Early,184
+明,あか。るい,Bright,185
+映,エイ(映画),Reflection,186
+春,はる,Spring,187
+昼,ひる,Noon,188
+暑,あつ。い,Hot,189
+暗,くら。い  アン,Dark,190
+曜,ヨ,Weekday,191
+有,ゆう,Existing,192
+服,ふく,Clothes,193
+朝,あさ,Morning,194
+村,むら,Village,195
+林,リン,Woods,196
+森,もり,Forest,197
+業,ぎょう,Business,198
+楽,たの。しい,Fun,199
+歌,うた,Song,200
+止,と。める,To Stop,201
+正,ただ。しい,Righteous,202
+歩,ある。く,To Walk,203
+死,し。ぬ,To Die,204
+民,たみ,People,205
+池,いけ,Pond,206
+注,そそ。ぐ,To Pour,207
+洋,ヨウ(洋服),Western,208
+洗,あら。う,To Wash,209
+海,うみ,Sea,210
+漢,カン(漢字),Chinese,211
+牛,うし,Cow,212
+物,もの,Thing,213
+特,とく,Especially,214
+犬,いぬ,Dog,215
+理,リ(理屈),Reason,216
+産,サン(産業),Industry,217
+用,ヨウ,Use,218
+田,デン,Rice Field,219
+町,まち,Town,220
+画,(映画)ガ,Picture,221
+界,(世界)カイ,World,222
+病,ビョウ(病気),Sick,223
+発,ハツ,Departure,224
+県,ケン,Prefecture,225
+真,(写真)シン,Reality,226
+着,き。る,To Wear,227
+知,し。る,To Know,228
+短,みじか。い,Short,229
+研,ケン(研究),Study,230
+私,わたし,I,231
+秋,あき,Autumn,232
+究,(研究)キュウ,Research,233
+答,こた。える,To Answer,234
+紙,かみ,Paper,235
+終,お。わる,To End,236
+習,なら。う,To Learn,237
+考,かんが。える,To Consider,238
+者,(医者)シャ,Person,239
+肉,にく,Meat,240
+自,ジ(自分),Oneself,241
+色,いろ,Colour,242
+英,エイ(英語),Outstanding,243
+茶,ちゃ,Tea,244
+菜,(野菜)さい,Vegetable,245
+薬,くすり,Medicine,246
+親,おや,Relative,247
+計,ケイ(計画),Plan,248
+試,シ(試験),Test,249
+説,セツ(説明),Opinion,250
+貸,か。す,To Lend,251
+質,シツ(質問),Quality,252
+赤,あか,Red,253
+走,はし。る,To Run,254
+起,お。きる,To Get Up,255
+転,テン,Turning,256
+軽,かる。い,Light,257
+近,ちか。い,Near,258
+送,おく。る,To Send,259
+通,つう,Traffic,260
+進,すす。む,To Advance,261
+運,はこ。ぶ,To Carry,262
+遠,とお。い,Far,263
+都,(京都)ト,Metropolitan,264
+重,おも。い,Heavy,265
+野,ヤ(野菜),Field,266
+銀,ぎん,Silver,267
+門,もん,Gate,268
+開,あ。ける,To Open,269
+院,(病院)イン,Institute,270
+集,あつ。まる,To Collect,271
+青,あお。い,Blue,272
+音,おと,Sound,273
+頭,あたま,Head,274
+題,(問題)ダイ,Topic,275
+顔,かお,Face,276
+風,かぜ,Wind,277
+飯,(朝ご飯)はん,Meal,278
+館,(美術館)カン,Building,279
+首,くび,Neck,280
+験,(試験)ケン,Effect,281
+鳥,とり,Bird,282
+黒,くろ。い,Black,283
+丁,テイ(丁寧),Street,284
+刀,かたな,Sword,285
+士,さむらい,Samurai,286
+丸,まる,Round,287
+才,さい,Age,288
+弓,ゆみ,Bow,289
+内,ナイ,Inside,290
+氏,し,Mr.,291
+化,(文化)カ,Change,292
+公,コウ(公園),Public,293
+予,ヨ(予定),Prior,294
+反,ハン(反対),Anti,295
+夫,(大丈夫)ブ,Husband,296
+戸,とびら,Door,297
+王,オウ,King,298
+欠,ケツ,Lack,299
+毛,もう,Fur,300
+平,ヘイ(平和),Peace,301
+加,くわ。える,Increase,302
+打,う。つ,Punch,303
+必,かなら。ず,Certain,304
+付,つ。ける,Adhere,305
+由,(自由)ユウ,Wherefore,306
+石,いし,Stone,307
+辺,ヘン,Vicinity,308
+失,シ(失敗),Lose,309
+末,(週末)マツ,End,310
+申,もう。します,Be called,311
+史,(歴史)シ,History,312
+他,ほか,Other,313
+央,(中央)オウ,Centre,314
+番,バン(番号),Number,315
+号,(番号)ゴウ,Item,316
+園,(公園)エン,Garden,317
+和,(平和)ワ,Harmony,318
+対,(反対)タイ,Opposite,319
+定,(予定)テイ,Determine,320
+敗,(失敗)ハイ,Failure,321
+歴,レキ(歴史),Curriculum,322
+未,ミ(未来),Not Yet,323
+玉,(金玉)タマ,Jewel,324
+寿,ス(寿司),Longevity,325
+司,(寿司)シ,Official,326
+命,めい。じる,Command,327
+令,(命令)レイ,Orders,328
+功,コウ,Achievement,329
+札,サツ,Paper Tag,330
+礼,(失礼)レイ,Thanks,331
+包,ホウ,Wrap,332
+皮,カワ,Skin,333
+矢,(弓矢)ヤ,Arrow,334
+氷,こう。り,Ice,335
+皿,さら,Plate,336
+米,ベイ,Rice,337
+全,ゼン(全部),Entire,338
+当,(本当)トウ,Hit,339
+成,セイ(成長),Become,340
+共,とも。に,Together,341
+交,まじ。わる,To Mingle,342
+向,む。かう,Facing,343
+次,つぎ,Next,344
+各,カク,Each,345
+両,リョウ(両方),Both,346
+式,(六式)シキ,Style,347
+争,(戦争)ソウ,Contend,348
+戦,たたか。う,Battle,349
+州,しゅう,State,350
+伝,デン(伝説),Tradition,351
+守,まも。る,Protect,352
+竹,たけ,Bamboo,353
+印,イン,Seal,354
+羽,はね,Feather,355
+老,ロウ(老人),Old,356
+曲,ま。がる,To Turn,357
+血,ち,Blood,358
+寺,てら,Temple,359
+仲,ナカ(仲間),Relationship,360
+列,レツ,Row,361
+兆,きざ。す,To Indicate,362
+衣,ころも,Garment,363
+虫,むし,Bug,364
+糸,いと,Thread,365
+灯,トウ,Lamp,366
+羊,ひつじ,Sheep,367
+決,き。める,To Decide,368
+改,カイ,Reformation,369
+初,はじ。めて,First,370
+告,コク,Inform,371
+利,リ(利息),Profit,372
+息,いき,Breath,373
+求,もと。める,To Seek,374
+投,とう。じる,To Throw,375
+位,くらい,Some,376
+局,キョク,Office,377
+役,ヤク,Role,378
+身,(自身)シン,Person,379
+助,たす。かる,Rescue,380
+形,かたち,Shape,381
+良,よ。い,Good,382
+谷,たに,Valley,383
+労,ロウ,Labour,384
+兵,(海兵)ヘイ,Soldier,385
+材,ザイ,Materials,386
+完,カン(完全),Perfect,387
+冷,つめ。たい,Cold,388
+児,ジ,Infant,389
+返,かえ。す,To Return,390
+芸,ゲイ(芸者),Art,391
+努,つと。める,To Endeavour,392
+囲,かこ。む,To Surround,393
+角,(四角)カク,Angle,394
+坂,さか,Hill,395
+希,キ(希望),Hope,396
+望,(希望)ぼう,Aspiration,397
+約,ヤク(約束),Promise,398
+束,(約束)ソク,Bundle,399
+君,きみ,You,400
+折,お。る,To Break,401
+里,さと,Village,402
+臣,(大臣)シン,Retainer,403
+豆,まめ,Beans,404
+麦,むぎ(麦わら),Wheat,405
+貝,カイ,Shellfish,406
+汽,き,Steam,407
+実,じつ,Reality,408
+表,ヒョウ,Expression,409
+法,(方法)ホウ,Principle,410
+的,(目的)テキ,Target,411
+治,なお。す,To Cure,412
+協,キョウ(協会),Cooperation,413
+取,と。る,To Take,414
+受,う。ける,To Receive,415
+府,(政府)フ,Borough,416
+委,ゆだ。ねる,To Entrust To,417
+参,まい。ります,To Move,418
+官,(長官)カン,(Govt) Secretary,419
+直,す。ぐに  ネ(値段),Straigtaway,420
+果,(効果)カ,Reward,421
+放,はな。す,To Set Free,422
+育,そだ。つ,To Bring Up,423
+残,ザン(残念)  のこ。り,Leftover,424
+念,(残念)ねん,Sense,425
+例,たと。えば,To Liken,426
+松,まつ,Pine,427
+岸,きし,Shore,428
+周,まわ。り,Around,429
+苦,くる。しむ,To suffer,430
+具,(道具)ぐ,Tool,431
+油,あぶら,Oil,432
+波,なみ,Wave,433
+固,かた。い,Hard,434
+卒,ソツ(卒業),Graduate,435
+幸,しあわ。せ,Happiness,436
+岩,いわ,Stone,437
+季,キ(季節),Season,438
+節,(季節)セツ,Cycle,439
+底,(海底)テイ,Low,440
+板,(黒板)ハン,Board,441
+典,テン,Law Code,442
+昔,むかし,Long Ago,443
+泳,およ。ぐ,To Swim,444
+刷,す。る サツ,To Print,445
+牧,ボク(牧人),Breed,446
+泣,な。く,To Cry,447
+毒,どく,Poison,448
+径,(半径)ケイ,Diameter,449
+芽,め,Sprout,450
+相,アイ(相手),Mutual,451
+要,(必要)ヨウ,Need,452
+指,ゆび,Finger,453
+点,(0点五)テン,Point (.),454
+活,(生活)カツ,Lively,455
+面,オモ(面白い)  メン,Mask,456
+軍,(空軍)グン,Army,457
+信,しん。じる,To Believe,458
+昨,さく(昨年),Previous,459
+係,かかり,Person in charge,460
+変,ヘン,Strange,461
+神,かみ(神様),God,462
+追,お。う,Chase,463
+負,ま。ける,To Lose,464
+美,うつく。しい,Beautiful,465
+型,かた  ケイ,Model,466
+科,カ(科学),Course,467
+省,ショウ,Ministry,468
+客,キャク(客様),Customer,469
+飛,と。ぶ,To Fly,470
+単,(簡単)たん,Simple,471
+昭,ショウ(昭和),Shining,472
+紀,(世紀)キ,Period (Era),473
+級,(10級)キュウ,Rank,474
+星,ほし,Star,475
+栄,エイ(栄光),Glory,476
+草,くさ,Grass,477
+秒,ビョウ,Second,478
+柱,はしら,Pillar,479
+畑,はたけ,Field,480
+祝,いわ。う,To Celebrate,481
+浅,あさ。い,Superficial ,482
+炭,すみ,Charcoal,483
+勇,ユウ(勇気),Bravery,484
+拾,ひろ。う,To Gather,485
+胃,イ(胃痛),Stomach,486
+痛,いた。む,To Hurt,487
+連,つ(連れて来て),Take along,488
+記,キ(記事),Account,489
+原,ゲン(原料),Primitive,490
+案,アン,Idea,491
+島,しま,Island,492
+選,えら。ぶ,To Choose,493
+挙,(選挙)きょ,Project,494
+流,なが。れる,To Flow,495
+消,き。える,To Disappear,496
+害,ガイ,Harm,497
+配,く。ばる  (心配)ハイ,To Distribute,498
+宮,キュウ,Shinto Shrine,499
+席,セキ,Location,500
+差,サ(差し上がる),To Be Visible,501
+候,(気候)コウ,Climate,502
+速,はや。さ,Speedy,503
+殺,サツ(殺人),Kill,504
+根,コン(根気),Root (Patience),505
+馬,うま ,Horse,506
+航,コウ(航海),Voyage,507
+倍,(十倍)バイ,(Tenfold),508
+帯,おび  タイ,Belt,509
+庭,にわ,Garden,510
+徒,(生徒)ト,Follower...,511
+庫,コ,Storage,512
+笑,わら。う,To Laugh,513
+郡,グン,District,514
+酒,さけ,Sake,515
+倉,ソウ(倉庫),Warehouse,516
+訓,クン(訓読み),Instruction,517
+浴,あ。びる,To Bathe,518
+荷,ニ(荷物),Baggage,519
+梅,うめ,Plum,520
+孫,まご,Grandson,521
+脈,(山脈)ミャク,Vein,522
+粉,こな,Flour,523
+部,(全部)ブ,Part,524
+第,ダイ(第一),Ordinal,525
+得,トク,Profit,526
+組,(番組)ぐみ,Set,527
+側,そば,Beside,528
+球,たま,Ball,529
+副,ふく(副隊長),Vice,530
+商,ショウ(商品),Dealing,531
+深,ふか。い,Deep,532
+票,ヒョウ,Ballot,533
+細,ほそ。い,Thin,534
+健,ケン,Health,535
+宿,やど,Inn,536
+清,セイ,Purity,537
+船,ふね,Ship,538
+停,テイ,To halt,539
+陸,リク,Land,540
+康,コウ(康平),Ease,541
+救,すく。う,To Save,542
+貨,(通貨)カ,Freight (Currency),543
+章,(文章)ショウ,Section,544
+唱,とな。える,To Chant,545
+祭,まつ。り,Festival,546
+雪,ゆき,Snow,547
+黄,き,Yellow,548
+械,カイ,Machine,549
+帳,(手帳)チョウ,Notebook,550
+巣,す,Nest,551
+笛,ふえ,Flute,552
+最,サイ(最後),Utmost,553
+期,き,Period,554
+結,ケツ(結果),Bind (Result),555
+勝,か。つ,To Win,556
+無,ム(無意味),Empty Of,557
+費,ヒ(費用),Expense,558
+象,ぞう,Elephant,559
+然,(全然)ゼン,That sort,560
+葉,(木の葉)ハ,Leaf,561
+景,ケイ,Scenery,562
+落,お。ちる,To Fall,563
+量,リョウ,Amount,564
+港,みなと,Harbour,565
+達,(私達)たち,Attain,566
+階,(二階)カイ,Story,567
+満,まん(満足),Full,568
+登,のぼ。る,To Climb,569
+隊,タイ(隊長),Squad,570
+給,キュウ(給料),Wages,571
+植,ショク(植物),Plant,572
+覚,おぼ。える,To Recall,573
+散,サン(散歩),Scatter,574
+喜,よろこ。ぶ,Joy,575
+順,ジュン,Obey,576
+博,ハク(博士),Dr.,577
+等,(彼等)ら,etc..,578
+温,あたた。かい,Warm,579
+街,まち,town,580
+絵,え,Picture,581
+遊,あそ。ぶ,To Play,582
+焼,や。く,To Grill,583
+悲,かな。しい,Sad,584
+晴,セイ(晴天),Clear,585
+陽,(太陽)ヨウ,Sunshine,586
+貯,チョ(貯金),Savings,587
+歯,は,Tooth,588
+筆,ふで,Pen,589
+童,(児童)ドウ,Juvenile,590
+雲,くも,Cloud,591
+湖,みずうみ,Lake,592
+湯,ゆ,Hot water,593
+続,つづ。く,To Continue,594
+数,かず,Number,595
+感,かん。じ,Feel,596
+置,お。く,To Place,597
+想,(予想)ソウ,Concept,598
+農,ノウ,Agriculture,599
+極,ゴク,Very,600
+福,(幸福)ふく,Good Fortune,601
+路,ろ,Path,602
+辞,ジ(辞任),Resignation,603
+愛,アイ,Love,604
+鉄,テツ,Iron,605
+照,ショウ,Illuminate,606
+塩,しお,Salt,607
+詩,し,Poem,608
+腸,チョウ,Guts,609
+算,サン(算数),Calculate,610
+種,(人種)しゅ,Species,611
+察,(警察)サツ,Police,612
+様,さま,Sama,613
+管,(血管)カン,Tube,614
+静,しず。か,Quiet,615
+練,レン(練習),Refinement,616
+漁,あさ。る,Fishing,617
+緑,みどり,Green,618
+旗,はた,Flag,619
+鳴,な。く,(Animal) Cry,620
+鼻,はな,Nose,621
+調,しら。べる,To Investigate,622
+談,(会談)ダン,Conversation,623
+線,セン,Line,624
+賞,ショウ(賞金),Reward,625
+課,カ,Chapter,626
+横,よこ,Sideways,627
+器,(武器)キ,Device,628
+標,(目標)ヒョウ,Mark,629
+輪,(指輪)わ,Ring,630
+熱,あつ。い,Hot,631
+億,おく,Hundred Million,632
+養,ヨウ(養子),Foster,633
+箱,はこ,Box,634
+機,(飛行機)キ,Mechanism,635
+整,セイ(整数),Organized,636
+積,せき,Product/Area,637
+録,ろく,Record,638
+橋,はし,Bridge,639
+観,カン(観光),Appearance,640
+類,(人類)ルイ,(Man) Kind,641
+願,ねが。い,Wish,642
+鏡,かがみ,Mirror,643
+議,(会議)ギ,Deliberation,644
+競,キョウ(競争),Compete,645
+留,リュウ(留学),Detain,646
+紹,ショウ(紹介),Introduce,647
+介,(紹介)カイ,Jammed In,648
+了,リョウ(了解),Finished,649
+与,あた。える,To Bestow,650
+亡,(死亡者) -ボウ-,Dead,651
+久,ひさ。しぶり,Long Time,652
+干,ほ,Dry,653
+支,し,Branch ,654
+比,くら。べる,To Compare,655
+収,シュウ(収入),Income,656
+仏,ほとけ,Buddha,657
+互,たが。い,Mutual,658
+双,ふた(双子),Pair,659
+片,かた,One of a Pair,660
+匹,(一匹)ひき,Animal Counter,661
+示,しめ。す,To Demonstrate,662
+可,カ(可能),Able,663
+能,(才能)ノウ,Ability,664
+処,ショ,Deal With,665
+旧,キュウ(旧式),Olden,666
+込,こ。む,To Be Crowded,667
+占,うらな。う,To Tell Fortunes,668
+圧,(気圧)アツ,Pressure,669
+庁,チョウ,Govt Office,670
+払,はら。う,To Pay,671
+永,エイ(永遠),Eternity,672
+刊,(週刊)カン,Publication,673
+犯,ハン(犯人),Crime,674
+布,(財布)フ,Linen/Cloth,675
+巨,キョ(巨人),Giant,676
+幼,ヨウ(幼児),Childhood,677
+甘,あま。い,Sweet,678
+冊,(に冊)さつ,Ctr for Books,679
+召,ショウ(召喚),Summon,680
+存,ソン(存在),Existing,681
+現,ゲン(現在),Present,682
+在,(現在)ザイ,Exist,683
+件,(事件)ケン,Affair,684
+団,ダン(団体),Group,685
+責,セキ(責任),Blame,686
+任,(責任)ニン,Responsibility,687
+再,ふたた。び,Once More,688
+宅,お。たく,Residence,689
+危,キ(危険),Danger,690
+険,(危険)ケン,Precipitous ,691
+因,イン,Cause,692
+宇,ウ(宇宙),Heaven,693
+宙,(宇宙)ちゅう,Space,694
+汚,きたな。い,Dirty,695
+仮,かり。に,Temporary,696
+吸,す。う,To Smoke,697
+叫,さけ。ぶ,To Scream,698
+忙,いそが。しい,Busy,699
+汗,あせ(汗水),Sweat,700
+肌,はだ(肌色),Skin,701
+机,つくえ,Desk,702
+灰,はい(灰色),Ash,703
+舟,ふね,Boat,704
+判,ハン(判断),Judgment,705
+断,(判断)ダン,Severance,706
+応,オウ,Apply/Response,707
+状,ジョウ(状況),Conditions,708
+防,ボウ(防衛),Defence ,709
+条,ジョウ(条件),Article (Condition),710
+技,ギ(技術),Skill,711
+術,ジュツ,Technique,712
+含,ふく。む,To Include,713
+否,ヒ(否決),Negate,714
+批,ヒ(批判),Criticism,715
+迎,むか。え,Welcome,716
+余,ヨ(余計),Too much,717
+均,(平均)キン,Average,718
+抜,ぬ。く,To Extract,719
+伸,の。びる,To Stretch,720
+乱,(混乱)ラン,Disorder,721
+志,(意志)シ,Intention,722
+困,こま。る,To Be Troubled,723
+更,さら。に,Furthermore,724
+戻,もど。る,To Return,725
+似,に(似合う),To Resemble,726
+快,カイ(快楽),Pleasure,727
+忘,わす。れる,To forget ,728
+吹,フ(吹雪),Blow,729
+床,とこ(床屋),Bed (Barber),730
+沈,しず。む,To Sink,731
+卵,たまご,Egg,732
+辛,から。い,Spicy,733
+坊,ボウ(坊主),Boy,734
+伺,うかが。う,To Ask,735
+性,(女性)セイ,Nature ,736
+制,セイ,System,737
+価,カ,Price,738
+供,(子供)ども,Submit,739
+述,(口述)ジュツ,Speaking,740
+武,ブ(武器),Military,741
+欧,オウ,Europa,742
+担,かつ。ぐ,To Shoulder,743
+若,わか。い,Young,744
+非,ヒ(非常),Negative (Emergency),745
+況,(状況)キョウ,Situation,746
+呼,よ。ぶ,To Call,747
+突,トツ(突然),Stab,748
+効,コウ(効果),Merit,749
+易,アン-(安易)イ,Simple,750
+券,(旅券)ケン,Ticket (Passport),751
+並,なら。ぶ,To Line Up,752
+拡,カク(拡大),Magnify,753
+彼,かれ,He,754
+河,カ(河川),River ,755
+妻,つま,Wife,756
+延,エン(延長),Prolong,757
+承,ショウ(承知),Acceptance,758
+押,お。す,To Push,759
+版,ハン,Printing,760
+昇,(上昇)ショウ,Rising,761
+居,キョ(居住),Reside,762
+招,まね。く,To Beckon,763
+刻,きざ。む,To Dice,764
+抱,いだ。く,To Embrace,765
+依,イ(依然),Reliant (Still),766
+枚,(一枚)マイ,Ctr for Flats,767
+届,とど。く,To Reach,768
+刺,さ。す,To Pierce,769
+至,いた。る,To Arrive At,770
+宝,たから  ホウ,Treasure,771
+肩,かた,Shoulder,772
+泊,と。まる,To Stay At,773
+杯,(一杯)ハイ,Cupful,774
+乳,(牛乳)にゅう,Milk,775
+怖,こわ。い,Scared,776
+枝,えだ,Branch,777
+拝,ハイ,Worship,778
+祈,いの。る,To Pray,779
+泥,どろ(泥棒),Mud,780
+姓,セイ(姓名),Surname,781
+沸,わ。かす,To Boil,782
+肯,コウ(肯定),Affirmation,783
+政,セイ(政府),Government,784
+保,ホ(保険),Guarantee,785
+査,(調査)サ,Investigate,786
+革,カク(革命),Reform/Leather,787
+独,ドク(独立),Alone (Independent),788
+限,ゲン(限界),Limit,789
+退,タイ(退学),Withdraw,790
+段,(階段)ダン,Step,791
+専,セン(専門),Speciality,792
+故,(事故)コ,Accident,793
+逆,ギャク(逆転),Reversal,794
+背,せ,Stature,795
+則,(原則)ソク,Rule,796
+厚,あつ。い,Thick,797
+城,しろ,Castle,798
+香,コウ(香水),Smell,799
+逃,に。げる,To Escape,800
+迷,まよ。う,To Be Perplexed,801
+巻,ま。く,To Wind/Roll,802
+律,(旋律)リツ,Melody/Law,803
+看,カン(看護),Watch Over (Nurse),804
+泉,(温泉)セン,Spring,805
+荒,あら。い,Rough,806
+封,フウ(封印),Seal,807
+砂,すな,Sand,808
+柔,ジュウ(柔道),Gentle,809
+怒,いか。り,Anger,810
+祖,ソ(祖父),Ancestor,811
+皆,み。んな,Every,812
+紅,くれない,Crimson,813
+郊,コウ(郊外),Outskirts,814
+珍,めずら。しい,Rare,815
+狭,せま。い,Narrow,816
+咲,さ。く,To Bloom,817
+枯,か。れる,To Wither,818
+挟,はさ。む,To Interpose,819
+党,(政党)トウ,Party,820
+容,(内容)ヨウ,Contain,821
+格,(合格)カク,Status,822
+展,テン,Exhibit,823
+造,ゾウ(造船),Construct,824
+被,ヒ(被害),Incur (Injury),825
+個,コ(個人),Individual,826
+財,ざい,Assets,827
+針,はり,Needle,828
+値,ネ(値段),Price,829
+師,(教師)し,Teacher,830
+座,すわ。る,To Sit,831
+破,やぶ。る,To Break,832
+捜,ソウ(捜査),Search,833
+除,ジョ(除外),Exclude,834
+降,ふ。る,To Precipitate,835
+捕,つか。まえる,To Catch,836
+将,ショウ(将軍),Leader,837
+般,(一般)ハン,Generally,838
+途,ト(途中),Way,839
+浮,う。く,To Float,840
+倒,たお。す,To Bring Down,841
+恐,キョウ(恐怖),Fear,842
+恵,(知恵)エ,Wisdom,843
+骨,ほね,Bone,844
+純,ジュン(純金),Purity,845
+悩,なや。み,Troubles,846
+埋,う。める,To Bury,847
+胸,むね,Chest,848
+娘,むすめ,Daughter,849
+疲,つか。れる,To Be Exhausted,850
+凍,こお。る,To Freeze,851
+恋,こい(恋人),In Love,852
+眠,ねむ。い,Sleepy ,853
+涙,なみだ,Tears,854
+軒,のき(軒並み)  ケン,Houses   Ctr ,855
+脂,シ,Fat,856
+恥,は。ずかしい,Embarrassed ,857
+畜,チク(畜生),Livestock (Beast),858
+経,ケイ(経験),Sutra (Experience),859
+務,(事務)ム,Duties,860
+設,(建設)セツ,Establishment,861
+済,(経済)サイ,Economics,862
+情,(事情)ジョウ,Emotion (Circumstances),863
+基,キ(基本),Foundations,864
+常,(非常)ジョウ,Ordinary,865
+規,キ,Standard,866
+訪,ホウ(訪問),Visit,867
+率,(確率)りつ,Ratio (Chances),868
+確,カク(確率),Assurance,869
+域,(地域)イキ,Region,870
+張,(主張)チョウ,Claim,871
+移,うつ。す,To Swap,872
+脳,ノウ,Brain,873
+接,セツ,Contact,874
+授,ジュ(授業),Impart,875
+採,サイ(採用),Pick,876
+販,ハン(販売),Sales,877
+異,イ(異常),Uncommon (Strangeness),878
+婦,(主婦)フ,Woman,879
+寄,よ。る,To Draw Near,880
+許,ゆる。す,To Permit,881
+婚,(結婚)コン,Marriage,882
+略,(戦略)リャク,Outline (Strategy),883
+混,コン(混血),Mixed,884
+著,チョ(著者),Author,885
+欲,ほ。しい,Want,886
+郵,ユウ(郵便),Mail,887
+探,さが。す,To Search,888
+閉,し。める,To Shut,889
+盗,ぬす。む,To Steal,890
+翌,よく,The Following,891
+袋,ふくろ,Bag,892
+窓,まど,Window,893
+液,エキ,Liquid,894
+貧,まず。しい  ヒン,Poor,895
+掃,ソウ(掃除),Sweep,896
+掘,ほ。る,To Dig,897
+捨,す。てる,To Throw Away,898
+軟,ナン(軟化),Soft,899
+頂,チョウ(頂上),Summit,900
+乾,かわ。く,To Dry,901
+偶,グウ(偶然),By Chance,902
+粒,リュウ(粒子),Grain,903
+猫,ねこ,Cat,904
+菓,カ(お菓子),Candy,905
+涼,すず。しい,Cool,906
+符,(切符)フ,Mark,907
+報,ホウ(報告),Report,908
+減,へ。る,To Decrease,909
+過,す。ぎる,To Exceed,910
+税,ゼイ(税金),Tax,911
+検,ケン(検査),Inspection,912
+営,エイ(営業),Business,913
+割,(役割)わり,Part,914
+補,(候補)ホ,Supply (Candidate),915
+準,ジュン(準備),Correspond To,916
+備,(準備)ビ,Preparation,917
+復,フク(復活),Restore,918
+渡,わた。す,To Traverse,919
+評,(批評)ヒョウ,Evaluate,920
+程,テイ(程度),Degree,921
+湾,(港湾)ワン,Bay,922
+超,チョウ(超人),Super,923
+幅,はば,Width,924
+富,フ(富者),Wealth,925
+貿,ボウ(貿易),Trade,926
+装,(偽装)ソウ,Attire (Camo),927
+換,(交換)カン,Exchange,928
+普,フ(普通),Universal,929
+測,(観測)ソク,Observation,930
+善,ゼン,Virtuous,931
+絶,ゼッ(絶対),Discontinue,932
+絡,(連絡)ラク,Entwine,933
+募,ボ(募集),Recruit,934
+勤,つと。めています,To Work For,935
+遅,おそ。い,Slow,936
+越,(引っ越す)こ,To Move To,937
+雇,やと。う,To Employ,938
+替,(着替え)か,Exchange,939
+奥,おく。さん,Wife,940
+敬,ケイ(敬語),Respect ,941
+御,お  ご,Honourable,942
+硬,かた。い,Hard,943
+腕,うで,Arm,944
+尊,ソン(尊敬),Revered,945
+喫,キツ(喫茶店),Consume,946
+晩,ばん,Evening,947
+棒,(鉄棒)ボウ,Rod,948
+湿,シツ(湿度),Humidity,949
+鈍,にぶ。い,Dull,950
+隅,(四隅)すみ,Nook,951
+筒,(水筒)トウ,Cylinder,952
+詞,(動詞)シ,Word,953
+偉,えら。い   イ,Admirable,954
+畳,たたみ,Tatami,955
+塔,トウ,Tower,956
+帽,ボウ(帽子),Hat,957
+解,カイ,Explanation,958
+資,シ(資金),Assets,959
+勢,セイ,Energy,960
+歳,サイ(歳末),Year,961
+違,ちが。う,Different,962
+禁,キン(禁術),Forbidden,963
+署,しょ(署名),Signature,964
+罪,つみ,Sin,965
+豊,ホウ(豊胸),Bountiful,966
+損,そこ。なう,To Damage,967
+裏,うら(裏口),Back,968
+触,さわ。る,To Touch,969
+傾,ケイ(傾向),Incline,970
+夢,ゆめ,Dream,971
+賃,(家賃)チン,Rent,972
+預,ヨ(預金),Deposit,973
+群,グン,Group,974
+詰,つ。まる,To be packed,975
+寝,ね。る,To Sleep,976
+較,(比較)カク,Comparison,977
+殿,(神殿)デン,Hall,978
+零,れい,Zero,979
+腹,はら,Belly,980
+煙,けむ。い,Smoke,981
+腰,こし,Hips,982
+溶,と。かす,To Melt,983
+暖,あたた。かい,Warmth,984
+鉱,コウ(鉱物),Mineral,985
+塗,ぬ。る,To Paint,986
+蒸,む。す,To Steam,987
+靴,くつ,Shoes,988
+総,すべ。て,Everything,989
+領,リョウ,Dominion,990
+際,(国際)サイ,Side,991
+認,みと。める,To Acknowledge ,992
+増,ふ。える,To Increase,993
+演,エン(演劇),Theatre,994
+疑,うたが。う,To Doubt,995
+構,かま。う,To Mind,996
+境,(国境)キョウ,Border,997
+製,セイ(製造),Manufacture,998
+適,テキ,Suitable,999
+精,セイ,Spirit,1000
+層,ソウ,Layer,1001
+雑,ザツ(雑誌),Misc,1002
+誌,(雑誌)し,Documents,1003
+像,(想像)ゾウ,Image,1004
+複,フク(複雑),Double,1005
+暮,く。らし,Living,1006
+誤,ゴ(誤解),Error ,1007
+慣,な。れる,To Get Used To,1008
+踊,おど。る,To Dance,1009
+髪,かみ,Hair,1010
+綿,(木綿)メン,Cotton,1011
+銅,ドウ,Copper,1012
+憎,にく。い,Detest,1013
+滴,(水滴)テキ,Drip,1014
+権,ケン(権利),Right/Privilege,1015
+論,ロン(論文),Discussion,1016
+導,みちび。く,To guide,1017
+蔵,ゾウ,Storage,1018
+編,あ。む,To Knit,1019
+舞,(歌舞伎)ブ,Dancing,1020
+諸,ショ(諸君),Various,1021
+劇,ゲキ,Drama,1022
+暴,ボウ(暴力),Violence,1023
+賛,サン(賛成),Approval,1024
+震,(地震)シン,Quake,1025
+駐,チュウ(駐車),Parking,1026
+鋭,するど。い,Sharp,1027
+膚,はだ,Skin,1028
+輸,ユ(輸送),Transport,1029
+頼,たの。む,To Beg,1030
+築,きず。く,To Pile Up,1031
+燃,も。える,To Blaze,1032
+薄,うす。い,Thin,1033
+操,あやつ。る,To Manipulate,1034
+壁,かべ,Wall,1035
+賢,かしこ。い,Wise,1036
+濃,こ。い,Deep/Strong,1037
+磨,みが。く,To Polish,1038
+曇,くも。る,To Cloud Up,1039
+優,やさ。しい,Kind,1040
+環,(指環)ワ,Ring,1041
+療,(医療)リョウ,Heal,1042
+講,コウ,Lecture,1043
+齢,レイ,Age,1044
+績,セキ,Achievements,1045
+濯,(洗濯)タク,Laundry,1046
+燥,ソウ,Dried,1047
+織,(組織)シキ,Post (Organization),1048
+難,むずか。しい,Difficult ,1049
+額,ひたい,Forehead,1050
+簡,カン(簡単),Simplicity,1051
+贈,おく。る,To Gift,1052
+警,ケイ(警察),Admonish,1053
+爆,バク(爆発),Explode,1054
+臓,(心臓)ゾウ,Inners,1055
