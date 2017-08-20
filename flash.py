@@ -62,6 +62,10 @@ def main():
 		"""Makes the answer frame appear"""
 		aFrame.grid()
 
+	def showComment():
+		"""Makes the comment frame appear"""
+		comment.grid()
+
 	def wrongAns():
 		"""Appends the card to wrong list, and moves to the next card"""
 		nonlocal wrongs
@@ -95,6 +99,7 @@ def main():
 		c.set(comments[index])
 		t.set(tags[index])
 		aFrame.grid_remove()
+		comment.grid_remove()
 
 	def csvWrite(name, ansList):
 		with open("csv/{}".format(name), 'w', encoding='utf-8') as outFile:
@@ -104,7 +109,7 @@ def main():
 
 	question = ttk.Label(qFrame, textvariable=q, anchor="center", font=("Meiryo", "108"))
 	answer   = ttk.Label(aFrame, textvariable=a, anchor="center", font=("Meiryo", "72"))
-	blank    = ttk.Label(aFrame, text="", background='#000')
+	comment  = ttk.Label(aFrame, textvariable=c, anchor="center", font=("Meiryo", "72"))
 	wrong    = ttk.Button(aFrame, text="Wrong", command=wrongAns)
 	confused = ttk.Button(aFrame, text="Mixup", command=mixedAns)
 	again    = ttk.Button(aFrame, text="Ask again", command=repeatCard)
@@ -122,7 +127,7 @@ def main():
 	aFrame.grid_propagate(0)
 
 	answer.grid(row=0, column=0, columnspan=4)
-	blank.grid(row=1, column=0, columnspan=4)
+	comment.grid(row=1, column=0, columnspan=4)
 	wrong.grid(row=2, column=0)
 	confused.grid(row=2, column=1)
 	again.grid(row=2, column=2)
@@ -137,9 +142,11 @@ def main():
 	aFrame.rowconfigure(2, weight=1)
 
 	aFrame.grid_remove()
+	comment.grid_remove()
 
 	qFrame.bind('<1>', lambda e: showAnswers())
 	question.bind('<1>', lambda e: showAnswers())
+	aFrame.bind('<1>', lambda e: showComment())
 
 	# Creating File Menu
 	menu = Menu(root)
