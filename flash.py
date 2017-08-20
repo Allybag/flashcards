@@ -71,7 +71,7 @@ def main():
 		nonlocal wrongs
 		wrongs.append((txtPrt(q), txtPrt(a), txtPrt(c), txtPrt(t)))
 		nextQuestion()
-		
+
 	def mixedAns():
 		"""Appends the card to mixed list, and moves to the next card"""
 		nonlocal mixeds
@@ -147,6 +147,10 @@ def main():
 	qFrame.bind('<1>', lambda e: showAnswers())
 	question.bind('<1>', lambda e: showAnswers())
 	aFrame.bind('<1>', lambda e: showComment())
+	root.bind('<Return>', lambda e: correctAns())
+	root.bind('<space>', lambda e: showAnswers())
+	root.bind('<BackSpace>', lambda e: wrongAns())
+	root.bind('<Tab>', lambda e: mixedAns())
 
 	# Creating File Menu
 	menu = Menu(root)
