@@ -60,9 +60,6 @@ def main():
 	qFrame = ttk.Frame(root, height=size*0.4, width=size)
 	aFrame = ttk.Frame(root, height=size*0.6, width=size)
 
-	def txtPrt(sVar):
-		return sVar.get()
-
 	def showAnswers():
 		"""Makes the answer frame appear"""
 		aFrame.grid()
@@ -73,25 +70,25 @@ def main():
 
 	def wrongAns():
 		"""Appends the card to wrong list, and moves to the next card"""
-		wrongs.append((txtPrt(q), txtPrt(a), txtPrt(c), txtPrt(t)))
+		wrongs.append((q.get(), a.get(), c.get(), t.get()))
 		ansList.append("wrong")
 		nextQuestion()
 
 	def mixedAns():
 		"""Appends the card to mixed list, and moves to the next card"""
-		mixeds.append((txtPrt(q), txtPrt(a), txtPrt(c), txtPrt(t)))
+		mixeds.append((q.get(), a.get(), c.get(), t.get()))
 		ansList.append("mixed")
 		nextQuestion()
 
 	def repeatCard():
 		"""Appends the card to repeat list, and moves to the next card"""
-		repeats.append((txtPrt(q), txtPrt(a), txtPrt(c), txtPrt(t)))
+		repeats.append((q.get(), a.get(), c.get(), t.get()))
 		ansList.append("repeat")
 		nextQuestion()
 
 	def correctAns():
 		"""Appends the card to correct list, and moves to the next card"""
-		corrects.append((txtPrt(q), txtPrt(a), txtPrt(c), txtPrt(t)))
+		corrects.append((q.get(), a.get(), c.get(), t.get()))
 		ansList.append("correct")
 		nextQuestion()
 
@@ -126,7 +123,7 @@ def main():
 		with open("csv/{}".format(name), 'w', encoding='utf-8') as outFile:
 			for line in cardList:
 				cardLine = ",".join(line)
-				outFile.write(ansLine)
+				outFile.write(cardLine)
 
 	def remWrite():
 		with open("csv/remainingCards.csv", 'w', encoding='utf-8') as outFile:
