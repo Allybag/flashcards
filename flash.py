@@ -40,7 +40,6 @@ def main():
 	# Setting up the lists of answered cards
 	wrongs   = []
 	mixeds   = []
-	repeats  = []
 	corrects = []
 
 	# ansList is a record of which buttons were pressed
@@ -80,12 +79,6 @@ def main():
 		ansList.append("mixed")
 		nextQuestion()
 
-	def repeatCard():
-		"""Appends the card to repeat list, and moves to the next card"""
-		repeats.append((q.get(), a.get(), c.get(), t.get()))
-		ansList.append("repeat")
-		nextQuestion()
-
 	def correctAns():
 		"""Appends the card to correct list, and moves to the next card"""
 		corrects.append((q.get(), a.get(), c.get(), t.get()))
@@ -107,8 +100,7 @@ def main():
 			return
 
 		# Dictionary mapping strings to lists
-		switcher = {"wrong":wrongs, "mixed": mixeds, "repeat": repeats,
-					"correct":corrects}
+		switcher = {"wrong":wrongs, "mixed": mixeds, "correct":corrects}
 		# Removes the last record in ansList, and removes that's last record
 		switcher.get(ansList.pop()).pop()
 
@@ -139,10 +131,9 @@ def main():
 	question = ttk.Label(qFrame, textvariable=q, anchor="center", font=("Meiryo", "108"))
 	answer   = ttk.Label(aFrame, textvariable=a, anchor="center", font=("Meiryo", "72"))
 	comment  = ttk.Label(aFrame, textvariable=c, anchor="center", font=("Meiryo", "72"))
-	wrong    = ttk.Button(aFrame, text="Wrong", command=wrongAns)
-	confused = ttk.Button(aFrame, text="Mixup", command=mixedAns)
-	again    = ttk.Button(aFrame, text="Ask again", command=repeatCard)
-	correct  = ttk.Button(aFrame, text="Correct", command=correctAns)
+	wrong    = ttk.Button(aFrame, text="Wrong", command=wrongAns, width=100)
+	confused = ttk.Button(aFrame, text="Mixup", command=mixedAns, width=100)
+	correct  = ttk.Button(aFrame, text="Correct", command=correctAns, width=100)
 
 	# The long process of sorting out the geometry manager
 	qFrame.grid(row=0, column=0)
@@ -159,13 +150,11 @@ def main():
 	comment.grid(row=1, column=0, columnspan=4)
 	wrong.grid(row=2, column=0)
 	confused.grid(row=2, column=1)
-	again.grid(row=2, column=2)
-	correct.grid(row=2, column=3)
+	correct.grid(row=2, column=2)
 
 	aFrame.columnconfigure(0, weight=1)
 	aFrame.columnconfigure(1, weight=1)
 	aFrame.columnconfigure(2, weight=1)
-	aFrame.columnconfigure(3, weight=1)
 	aFrame.rowconfigure(0, weight=1)
 	aFrame.rowconfigure(1, weight=1)
 	aFrame.rowconfigure(2, weight=1)
@@ -192,7 +181,6 @@ def main():
 	fileMenu.add_command(label="Undo", command=lambda: undo())
 	fileMenu.add_command(label="Wrongs", command=lambda: csvWrite("wrongCards.csv",wrongs))
 	fileMenu.add_command(label="Mixeds", command=lambda: csvWrite("mixedCards.csv",mixeds))
-	fileMenu.add_command(label="Repeats", command=lambda: csvWrite("repeatCards.csv",repeats))
 	fileMenu.add_command(label="Corrects", command=lambda: csvWrite("correctCards.csv",corrects))
 	fileMenu.add_command(label="Remaining", command=lambda: remWrite())
 
