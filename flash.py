@@ -13,6 +13,8 @@ def readFile(inFile):
 	with open(inFile, 'r', encoding='utf-8') as inFile:
 		lines = inFile.readlines()
 		random.shuffle(lines)
+		with open("csv/randomCards.csv", 'w', encoding='utf-8') as outFile:
+			outFile.writelines(lines)
 	for line in lines:
 		if line.count(',') != 3:
 			continue
@@ -120,11 +122,22 @@ def main():
 		aFrame.grid_remove()
 		comment.grid_remove()
 
-	def csvWrite(name, ansList):
+	def csvWrite(name, cardList):
 		with open("csv/{}".format(name), 'w', encoding='utf-8') as outFile:
-			for line in ansList:
-				ansLine = ",".join(line)
+			for line in cardList:
+				cardLine = ",".join(line)
 				outFile.write(ansLine)
+
+	def remWrite():
+		with open("csv/remainingCards.csv", 'w', encoding='utf-8') as outFile:
+			with open("csv/randomCards.csv", 'r', encoding='utf-8') as inFile:
+				lines = inFile.readlines()
+				index = 0
+				for line in lines:
+					if index < len(ansList):
+						index = index + 1
+						continue
+					outFile.write(line)
 
 	question = ttk.Label(qFrame, textvariable=q, anchor="center", font=("Meiryo", "108"))
 	answer   = ttk.Label(aFrame, textvariable=a, anchor="center", font=("Meiryo", "72"))
@@ -184,6 +197,7 @@ def main():
 	fileMenu.add_command(label="Mixeds", command=lambda: csvWrite("mixedCards.csv",mixeds))
 	fileMenu.add_command(label="Repeats", command=lambda: csvWrite("repeatCards.csv",repeats))
 	fileMenu.add_command(label="Corrects", command=lambda: csvWrite("correctCards.csv",corrects))
+	fileMenu.add_command(label="Remaining", command=lambda: remWrite())
 
 	root.mainloop()
 
