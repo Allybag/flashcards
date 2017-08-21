@@ -31,7 +31,6 @@ def main():
 	(questions, answers, comments, tags) = readFile("csv/Kanji.csv")
 
 	# Initalisation
-	index = 0
 	root = Tk()
 	root.title("Flash Cards")
 	root.geometry('{}x{}'.format(size, size))
@@ -41,17 +40,20 @@ def main():
 	mixeds   = []
 	repeats  = []
 	corrects = []
-	touched  = ""
+
+	# ansList is a record of which buttons were pressed
+	# len(ansList) is the index of how many cards we've dealt with
+	ansList  = []
 
 	# Setting up the text variables which will be displayed on the cards
 	q = StringVar()
 	a = StringVar()
 	c = StringVar()
 	t = StringVar()
-	q.set(questions[index])
-	a.set(answers[index])
-	c.set(comments[index])
-	t.set(tags[index])
+	q.set(questions[len(ansList)])
+	a.set(answers[len(ansList)])
+	c.set(comments[len(ansList)])
+	t.set(tags[len(ansList)])
 
 	qFrame = ttk.Frame(root, height=size*0.4, width=size)
 	aFrame = ttk.Frame(root, height=size*0.6, width=size)
@@ -69,52 +71,52 @@ def main():
 
 	def wrongAns():
 		"""Appends the card to wrong list, and moves to the next card"""
-		nonlocal wrongs, touched
 		wrongs.append((txtPrt(q), txtPrt(a), txtPrt(c), txtPrt(t)))
-		touched = wrongs
+		ansList.append("wrong")
 		nextQuestion()
 
 	def mixedAns():
 		"""Appends the card to mixed list, and moves to the next card"""
-		nonlocal mixeds, touched
 		mixeds.append((txtPrt(q), txtPrt(a), txtPrt(c), txtPrt(t)))
-		touched = mixeds
+		ansList.append("mixed")
 		nextQuestion()
 
 	def repeatCard():
 		"""Appends the card to repeat list, and moves to the next card"""
-		nonlocal repeats, touched
 		repeats.append((txtPrt(q), txtPrt(a), txtPrt(c), txtPrt(t)))
-		touched = repeats
+		ansList.append("repeat")
 		nextQuestion()
 
 	def correctAns():
 		"""Appends the card to correct list, and moves to the next card"""
-		nonlocal corrects, touched
 		corrects.append((txtPrt(q), txtPrt(a), txtPrt(c), txtPrt(t)))
-		touched = corrects
+		ansList.append("correct")
 		nextQuestion()
 
 	def nextQuestion():
 		"""Displays the question from the next card"""
-		nonlocal index
-		index = index + 1
-		q.set(questions[index])
-		a.set(answers[index])
-		c.set(comments[index])
-		t.set(tags[index])
+		q.set(questions[len(ansList)])
+		a.set(answers[len(ansList)])
+		c.set(comments[len(ansList)])
+		t.set(tags[len(ansList)])
 		aFrame.grid_remove()
 		comment.grid_remove()
 
 	def undo():
 		"""Displays the question from the previous card"""
-		nonlocal index, touched
-		index = index - 1
-		q.set(questions[index])
-		a.set(answers[index])
-		c.set(comments[index])
-		t.set(tags[index])
-		touched.pop()
+		if len(ansList) == 0:
+			return
+
+		# Dictionary mapping strings to lists
+		switcher = {"wrong":wrongs, "mixed": mixeds, "repeat": repeats,
+					"correct":corrects}
+		# Removes the last record in ansList, and removes that's last record
+		switcher.get(ansList.pop()).pop()
+
+		q.set(questions[len(ansList)])
+		a.set(answers[len(ansList)])
+		c.set(comments[len(ansList)])
+		t.set(tags[len(ansList)])
 		aFrame.grid_remove()
 		comment.grid_remove()
 
