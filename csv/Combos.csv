@@ -1,0 +1,211 @@
+日記,にっき,Diary,1
+成田,なりた,Narita,2
+趣味,しゅみ,Hobby,3
+興味,きょうみ,Interest,4
+知識,ちしき,Knowledge,5
+豊富,ほうふ,Abundance,6
+飛行機,ひこうき,Aeroplane,7
+勤める,つとめる,To Work For,8
+休暇,きゅうか,Day Off,9
+両親,りょうしん,Parents,10
+時差,じさ,Time Difference,11
+結局,けっきょく,Eventually,12
+適当,てきとう,Suitable,13
+自己,じこ,Self,14
+文句,もんく,Complaint,15
+会釈,えしゃく,Slight Bow,16
+同僚,どうりょう,Colleague,17
+非常,ひじょう,Extremely,18
+一般的,いっぱんてき,Typical,19
+会話,かいわ,Conversation,20
+用紙,ようし,Blank Paper,21
+締め切り,しめきり,Deadline,22
+情報,じょうほう,Information,23
+場合,ばあい,Situation,24
+面接,めんせつ,Interview,25
+成績,せいせき,Grade,26
+性格,せいかく,Character,27
+態度,たいど,Attitude,28
+優先,ゆうせん,Priority,29
+交渉,こうしょう,Negotiations,30
+国際,こくさい,International,31
+経済,けいざい,Economics,32
+政治,せいじ,Politics,33
+宗教,しゅうきょう,Religious Affairs,34
+家庭,かてい,Household,35
+希望者,きぼうしゃ,Applicant,36
+人口,じんこう,Population,37
+自転車,じてんしゃ,Bicycle,38
+仏教,ぶっきょう,Buddhism,39
+理由,りゆう,Reason,40
+重要,じゅうよう,Important,41
+事務員,じむいん,Office Worker,42
+玄関,げんかん,Entrance,43
+発表,はっぴょう,Announcement,44
+相談,そうだん,Discussion,45
+調子,ちょうし,Tune,46
+様子,ようす,State,47
+居酒屋,いざかや,Japanese Bar,48
+傾向,けいこう,Inclination,49
+一流,いちりゅう,First Rate,50
+浪人,ろうにん,Ronin,51
+将来,しょうらい,Future,52
+確か,たしか,Sure,53
+講義,こうぎ,Lecture,54
+注文,ちゅうもん,Order,55
+限る,かぎる,Limit,56
+高級,こうきゅう,Top class,57
+物価,ぶっか,Prices,58
+引用,いんよう,Quotation,59
+面倒,めんどう,Hassle,60
+美容,びよう,Beauty,61
+計算,けいさん,Calculations,62
+部品,ぶひん,Parts,63
+用事,ようじ,Tasks,64
+伝統的,でんとうてき,Traditional,65
+最近,さいきん,Recently,66
+関心,かんしん,Interest,67
+出身,しゅっしん,Hometown,68
+放映,ほうえい,To Air (Televise),69
+野球,やきゅう,Baseball,70
+秋葉原,あきはばら,Akihabara,71
+選手,せんし,Competitor,72
+地域,ちいき,Region,73
+優勝,ゆうしょう,Championship,74
+名誉,めいよ,Honour,75
+相撲,すもう,Sumo,76
+出番,でばん,Turn,77
+出場,しゅつじょう,Participation,78
+応援,おうえん,Support,79
+力士,りきし,Wrestler,80
+活躍,かつやく,Activities,81
+経験,けいけん,Experience,82
+早速,さっそく,Immediately,83
+決心,けっしん,Determination,84
+北海道,ほっかいど,Hokkaido,85
+教師,きょうし,Teacher,86
+感動,かんどう,Excitement,87
+決定,けってい,Decision,88
+主任,しゅにん,Chief,89
+方法,ほうほう,Method,90
+特技,とくぎ,Skill,91
+対象,たいしょう,Target,92
+雑誌,ざっし,Magazine,93
+主婦,しゅふ,Housewife,94
+親類,しんるい,Relatives,95
+翻訳,ほんやく,Translation,96
+正月,しょうがつ,New Year,97
+新郎,しんろう,Groom,98
+新婦,しんぷ,Bride,99
+上司,じょうし,Boss,100
+中元,ちゅうげん,Chuugen,101
+招待,しょうたい,Invitation,102
+世話,せわ,Look After,103
+明らか,あきらか,Obvious,104
+不気味,ぶきみ,Strange,105
+予約,よやく,Reservation,106
+住所,じゅうしょ,Address,107
+商業,しょうぎょう,Commerce,108
+切符,きっぷ,Ticket,109
+民宿,みんしゅく,Guesthouse,110
+神社,じんじゃ,Shrine,111
+絶えず,たえず,Constantly,112
+見物,けんぶつ,Sightseeing,113
+鉄道,てつどう,Railroad,114
+和室,わしつ,Japanese Room,115
+連絡,れんらく,Contact,116
+有効,ゆうこう,Valid,117
+大阪,おおさか,Osaka,118
+犯罪,はんざい,Crime,119
+風呂,ふろ,Bath,120
+自然,しぜん,Natural,121
+横浜,よこはま,Yokohama,122
+混雑,こんざつ,Congestion,123
+魅力,みりょく,Charm,124
+名古屋,なごや,Nagoya,125
+冗談,じょうだん,Joke,126
+批判,ひはん,Criticism,127
+被害,ひがい,Injury,128
+運賃,うんちん,Fare,129
+景色,けしき,Scenery,130
+芸術,げいじゅつ,Art,131
+特徴,とくちょう,Characteristic,132
+奈良,なら,Nara,133
+独立,どくりつ,Independence,134
+似合う,にあう,To Suit,135
+使用,しよう,Use,136
+関係,かんけい,Connection,137
+助言,じょげん,Advice,138
+結果,けっか,Result,139
+効果,こうか,Effect,140
+常に,つねに,Always,141
+相違,そうい,Difference,142
+形容,けいよう,Describing,143
+参加,さんか,Participation,144
+無限,むげん,Infinite,145
+無駄,むだ,Useless,146
+喫茶店,きっさてん,Cafe,147
+過ごす,すごす,To Pass Time,148
+洗濯,せんたく,Laundry,149
+感想,かんそう,Impression,150
+身振り,みぶり,Gesture,151
+我慢,がまん,Patience,152
+積極的,せっきょくてき,Positive,153
+しかめっ面,しかめっつら,Grimace,154
+具合,ぐあい,Condition,155
+食欲,しょくよく,Appetite,156
+症状,しょうじょう,Symptom,157
+無茶,むちゃ,Absurd,158
+主張,しゅちょう,Insistence,159
+成功,せいこう,Success,160
+問診,もんしん,History Taking,161
+素人,しろうと,Amateur,162
+手順,てじゅん,Procedure,163
+雰囲気,ふんいき,Atmosphere,164
+患者,かんじゃ,Patient,165
+導入,どうにゅう,Introduction,166
+正式,せいしき,Official,167
+当時,とうじ,In Those Days,168
+感情,かんじょう,Emotion,169
+苦手,にがて,Weak At,170
+片言,かたこと,Prattle,171
+記念,きねん,Commemeration,172
+長野,ながの,Nagano,173
+一生懸命,いっしょうけんめい,Very Hard,174
+合衆国,がっしゅうこく,USA,175
+俳優,はいゆう,Actor,176
+進歩,しんぽ,Progress,177
+指差す,ゆびさす,To Point,178
+克服,こくふく,Conquest,179
+矛盾,むじゅん,Contradiction,180
+収入,しゅうにゅう,Salary,181
+動力,どうりょく,Power,182
+努力,どりょく,Effort,183
+自由,じゆう,Freedom,184
+夫婦,ふうふ,Couple,185
+性格,せいかく,Personality,186
+増加,ぞうか,Increase,187
+理想,りそう,Ideal,188
+不公平,ふこうへい,Injustice,189
+期待,きたい,Expectation,190
+低下,ていか,Fall,191
+勝手,かって,One's Own Way,192
+割合,わりあい,Proportion,193
+尊敬,そんけい,Respect,194
+賛成,さんせい,Approval,195
+先輩,せんぱい,Senpai,196
+連続,れんぞく,Consecutive,197
+課題,かだい,Subject,198
+弁当,べんとう,Bento,199
+柔軟,じゅうなん,Flexible,200
+相棒,あいぼう,Partner,201
+協力,きょうりょく,Cooperation,202
+価値,かち,Value,203
+意見,いけん,Opinion,204
+判断,はんだん,Judgement,205
+材料,ざいりょう,Material,206
+都合,つごう,Circumstances,207
+製品,せいひん,Goods,208
+著者,ちょしゃ,Author,209
+居心地,いごこち,Comfort,210
+毛布,もうふ,Blanket,211

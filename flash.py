@@ -30,7 +30,7 @@ def readFile(inFile):
 
 def main():
 	# Read up the data to be studied
-	(questions, answers, comments, tags) = readFile("csv/Kanji.csv")
+	(questions, answers, comments, tags) = readFile("csv/Infile.csv")
 
 	# Initalisation
 	root = Tk()
@@ -166,10 +166,8 @@ def main():
 	question.bind('<1>', lambda e: showAnswers())
 	aFrame.bind('<1>', lambda e: showComment())
 	root.bind('<Return>', lambda e: correctAns())
-	root.bind('<space>', lambda e: showAnswers())
+	root.bind('<Tab>', lambda e: showAnswers())
 	root.bind('<BackSpace>', lambda e: undo())
-	root.bind('<Escape>', lambda e: wrongAns())
-	root.bind('<Tab>', lambda e: mixedAns())
 
 	# Creating File Menu
 	menu = Menu(root)
