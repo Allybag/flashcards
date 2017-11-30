@@ -46,6 +46,14 @@ def main():
 	# len(ansList) is the index of how many cards we've dealt with
 	ansList  = []
 
+	# Setting up the text variables which will be displayed on the progress bar
+	r = StringVar()
+	k = StringVar()
+	w = StringVar()
+	r.set("Remaining Cards: {}".format(len(answers) - len(ansList)))
+	k.set("Correct Answers : {}".format(len(corrects)))
+	w.set("Wrong Answers : {}".format(len(wrongs) + len(mixeds)))
+
 	# Setting up the text variables which will be displayed on the cards
 	q = StringVar()
 	a = StringVar()
@@ -56,8 +64,9 @@ def main():
 	c.set(comments[len(ansList)])
 	t.set(tags[len(ansList)])
 
+	sFrame = ttk.Frame(root, height=size*0.05, width=size)
 	qFrame = ttk.Frame(root, height=size*0.4, width=size)
-	aFrame = ttk.Frame(root, height=size*0.6, width=size)
+	aFrame = ttk.Frame(root, height=size*0.55, width=size)
 
 	def showAnswers():
 		"""Makes the answer frame appear"""
@@ -91,6 +100,11 @@ def main():
 		a.set(answers[len(ansList)])
 		c.set(comments[len(ansList)])
 		t.set(tags[len(ansList)])
+
+		r.set("Remaining Cards: {}".format(len(answers) - len(ansList)))
+		k.set("Correct Answers : {}".format(len(corrects)))
+		w.set("Wrong Answers : {}".format(len(wrongs) + len(mixeds)))
+
 		aFrame.grid_remove()
 		comment.grid_remove()
 
@@ -136,14 +150,33 @@ def main():
 	correct  = ttk.Button(aFrame, text="Correct", command=correctAns, width=100)
 
 	# The long process of sorting out the geometry manager
-	qFrame.grid(row=0, column=0)
+	# Sorting out Styles of Labels with different colour text
+	s = ttk.Style()
+	s.configure('lRem.TLabel', foreground='purple')
+	s.configure('lCor.TLabel', foreground='darkgreen')
+	s.configure('lWro.TLabel', foreground='red')
+
+	# First the status bar at the top
+	sFrame.grid(row=0, column=0)
+	sFrame.grid_propagate(0)
+
+	remainingNo = ttk.Label(sFrame, textvariable=r, style="lRem.TLabel")
+	correctNo   = ttk.Label(sFrame, textvariable=k, style="lCor.TLabel")
+	wrongNo     = ttk.Label(sFrame, textvariable=w, style="lWro.TLabel")
+	remainingNo.grid(row=0, column=0, padx="12px")
+	correctNo.grid(row=0, column=1, padx="12px")
+	wrongNo.grid(row=0, column=2, padx="12px")
+
+	# Next the question Card
+	qFrame.grid(row=1, column=0)
 	qFrame.grid_propagate(0)
 
 	question.grid(row=0, column=0)
 	qFrame.columnconfigure(0, weight=1)
 	qFrame.rowconfigure(0, weight=1)
 
-	aFrame.grid(row=1, column=0)
+	# Last, and most complicated, the answer Card
+	aFrame.grid(row=2, column=0)
 	aFrame.grid_propagate(0)
 
 	answer.grid(row=0, column=0, columnspan=4)

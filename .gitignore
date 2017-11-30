@@ -102,3 +102,4 @@ ENV/
 
 # Ally
 csv/*Cards.csv
+csv/InFile.csv
