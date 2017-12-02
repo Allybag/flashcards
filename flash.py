@@ -1,6 +1,7 @@
 import random
 from tkinter import *
 from tkinter import ttk
+import tkinter.messagebox
 
 size = 500
 
@@ -76,23 +77,27 @@ def main():
 		"""Makes the comment frame appear"""
 		comment.grid()
 
+	def proceed():
+		"""Either displays the next question, or ends the program"""
+		nextQuestion() if len(ansList) != len(answers) else gameOver()
+
 	def wrongAns():
 		"""Appends the card to wrong list, and moves to the next card"""
 		wrongs.append((q.get(), a.get(), c.get(), t.get()))
 		ansList.append("wrong")
-		nextQuestion()
+		proceed()
 
 	def mixedAns():
 		"""Appends the card to mixed list, and moves to the next card"""
 		mixeds.append((q.get(), a.get(), c.get(), t.get()))
 		ansList.append("mixed")
-		nextQuestion()
+		proceed()
 
 	def correctAns():
 		"""Appends the card to correct list, and moves to the next card"""
 		corrects.append((q.get(), a.get(), c.get(), t.get()))
 		ansList.append("correct")
-		nextQuestion()
+		proceed()
 
 	def nextQuestion():
 		"""Displays the question from the next card"""
@@ -107,6 +112,13 @@ def main():
 
 		aFrame.grid_remove()
 		comment.grid_remove()
+
+	def gameOver():
+		aFrame.grid_remove()
+		qFrame.grid_remove()
+		replay = tkinter.messagebox.askquestion('The End! You answered {}% of cards correctly!'.format(len(corrects) / len(answers) * 100), "Would you like to write your wrong/mixedup answers to the inFile?")
+		if replay == "yes":
+			csvWrite("InFile.csv", wrongs + mixeds)
 
 	def undo():
 		"""Displays the question from the previous card"""
@@ -124,6 +136,11 @@ def main():
 		t.set(tags[len(ansList)])
 		aFrame.grid_remove()
 		comment.grid_remove()
+
+		r.set("Remaining Cards: {}".format(len(answers) - len(ansList)))
+		k.set("Correct Answers : {}".format(len(corrects)))
+		w.set("Wrong Answers : {}".format(len(wrongs) + len(mixeds)))
+
 
 	def csvWrite(name, cardList):
 		with open("csv/{}".format(name), 'w', encoding='utf-8') as outFile:
